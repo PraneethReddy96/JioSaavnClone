@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BrowseFragment">
+
+    <TextView
+        android:id="@+id/tvBrowse"
+        style="@style/BrowseTextView"
+        android:text="Browse"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNewRelease"
+            style="@style/BrowesButton"
+            android:background="@drawable/release"/>
+
+        <Button
+            android:id="@+id/btnTopCharts"
+            style="@style/BrowesButton"
+            android:background="@drawable/topcharts" />
+
+        <Button
+            android:id="@+id/btnRadioStation"
+            style="@style/BrowesButton"
+            android:background="@drawable/radio" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="50dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etFindMood"
+            style="@style/BrowseTextView"
+            android:layout_margin="5dp"
+            android:paddingStart="@dimen/dp_10"
+            android:drawableStart="@drawable/ic_search1"
+            android:drawablePadding="@dimen/dp_10"
+            android:textStyle="normal"
+            android:textSize="@dimen/sp_16"
+            android:hint="Find Your Mood"
+            android:paddingLeft="@dimen/dp_10"
+            android:drawableLeft="@drawable/ic_search1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/dp_20"
+        android:id="@+id/browseNewReleaseRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

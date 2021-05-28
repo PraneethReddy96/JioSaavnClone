@@ -1,0 +1,6 @@
+include ':app'
+
+rootProject.name = "Saavn_App_Praneeth"
+
+
+

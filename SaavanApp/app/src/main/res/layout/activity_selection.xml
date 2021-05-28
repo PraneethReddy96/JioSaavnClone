@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivJioLogo"
+        android:layout_width="143dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/jio_savan_logo_bg" />
+     <TextView
+         android:id="@+id/tvSelectLanguage"
+            style="@style/Textview"
+             android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="Welcome to Jio Saavn !"
+             android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btnHindi"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/jio_saavn_artists"
+        style="@style/ImageViewSelectingImage"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tvOtherLanguages"
+        style="@style/Textview"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="What Languages do you listen to ? "
+        android:textColor="@color/black"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+        tools:listitem="@layout/item_layout_mainactivity"
+        android:id="@+id/recyclerViewMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="@string/done"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_40"
+        android:paddingEnd="@dimen/dp_40"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/backgorund_done"
+        />
+    </LinearLayout>
+
+</ScrollView>
+
+<!--
+<Button
+        android:id="@+id/btnMarathi"
+        style="@style/ButtonMainActivity"
+        android:text="@string/marathi"/>
+    <Button
+        android:id="@+id/btnGujarati"
+        style="@style/ButtonMainActivity"
+        android:text="@string/gujarati"/>
+    <Button
+        android:id="@+id/btnHaryanvi"
+            style="@style/ButtonMainActivity"
+            android:text="@string/haryanvi" />
+    <Button
+        android:id="@+id/btnRajasthani"
+        style="@style/ButtonMainActivity"
+        android:text="@string/rajasthani"/>
+    <Button
+        android:id="@+id/btnUrdu"
+        style="@style/ButtonMainActivity"
+        android:text="@string/urdu"/>
+    <Button
+        android:id="@+id/btnBhojpuri"
+        style="@style/ButtonMainActivity"
+        android:text="@string/bhojpuri"/>
+    <Button
+        android:id="@+id/btnKannada"
+        style="@style/ButtonMainActivity"
+        android:text="@string/kannada"/>
+    <Button
+        android:id="@+id/btnMalayalam"
+        style="@style/ButtonMainActivity"
+        android:text="@string/malayam"/>
+    <Button
+        android:id="@+id/btnOdia"
+        style="@style/ButtonMainActivity"
+        android:text="@string/odia"/>
+    <Button
+        android:id="@+id/btnAssamese"
+        style="@style/ButtonMainActivity"
+        android:text="Assamese"/>
+-->

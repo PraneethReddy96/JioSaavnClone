@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_grey"
+    android:gravity="center"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        style="@style/ImageView"
+        android:src="@drawable/savan_logo"
+        />
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/jioSaavnLoader"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
+        app:lazyloader_animDur="800"
+        app:lazyloader_dotsDist="5dp"
+        app:lazyloader_dotsRadius="3dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@color/green"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@color/green"
+        app:lazyloader_thirdDotColor="@color/green" />
+</LinearLayout>

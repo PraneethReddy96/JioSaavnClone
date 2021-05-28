@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music">Music</string>
+    <string name="podcast">Podcast</string>
+    <string name="podcasts">Podcasts</string>
+    <string name="go_pro">Go pro</string>
+    <string name="go_pro_">Go Pro</string>
+    <string name="english_top_songs">English Top Songs</string>
+    <string name="telugu_top_songs">TELUGU TOP SONGS</string>
+    <string name="hindi_top_songs">Hindi Top Songs</string>
+    <string name="radio_stations">Radio Stations</string>
+    <string name="tamil_top_songs">Tamil Top Songs</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="choose_your_artist">Choose Your Artist</string>
+    <string name="malayalam_top_songs">Malayalam Top Songs</string>
+    <string name="new_releases">New Releases</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="app_name">JioSaavn</string>
+    <string name="create_and_account">Create and Account</string>
+    <string name="sign_up_login" translatable="false">Sign up or Log in</string>
+    <string name="or_use">Or, use</string>
+    <string name="email_id">email Id</string>
+    <string name="phone_number">phone number</string>
+    <string name="or">or</string>
+    <string name="facebook">Facebook.</string>
+    <string name="what_language_do_you_listen_to">What language do you listen to ?</string>
+    <string name="other_languages">Other Languages</string>
+    <string name="haryanvi">Haryanvi</string>
+    <string name="gujarati">Gujarati</string>
+    <string name="marathi">Marathi</string>
+    <string name="rajasthani">Rajasthani</string>
+    <string name="urdu">Urdu</string>
+    <string name="bhojpuri">Bhojpuri</string>
+    <string name="kannada">Kannada</string>
+    <string name="malayam">Malayalam</string>
+    <string name="odia">Odia</string>
+    <string name="done">Done</string>
+    <string name="find_your_mood">Find Your Mood</string>
+    <string name="facebook_app_id">552050705700980</string>
+    <string name="fb_login_protocol_scheme">fb552050705700980</string>
+
+
+</resources>

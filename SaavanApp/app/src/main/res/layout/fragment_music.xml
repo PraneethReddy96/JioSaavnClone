@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MusicFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivLatestImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_220"
+            android:scaleType="fitXY"
+            android:src="@drawable/saavn3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvGoodEvening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="Good Evening"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLatestImage" />
+
+        <TextView
+            android:id="@+id/tvGoodEveningDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/sp_20"
+            android:text="@string/telugu_top_songs"
+            android:textColor="@color/NavyBlue"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGoodEvening" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topTeluguRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGoodEveningDescription" />
+
+        <TextView
+            android:id="@+id/tvEnglishTopSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/english_top_songs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/topTeluguRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topEnglishRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEnglishTopSongs" />
+
+
+        <TextView
+            android:id="@+id/tvTrendingSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/trending_now"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/topEnglishRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trendingRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_380"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTrendingSongs" />
+
+        <TextView
+            android:id="@+id/tvHindiTopSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/hindi_top_songs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/trendingRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topHindiRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHindiTopSongs" />
+
+        <TextView
+            android:id="@+id/tvRadioSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/radio_stations"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/topHindiRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RadioStationRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_380"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRadioSongs" />
+
+        <TextView
+            android:id="@+id/tvTamilTopSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/tamil_top_songs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/RadioStationRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topTamilRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTamilTopSongs" />
+
+
+
+
+        <TextView
+            android:id="@+id/tvMalayalamSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/malayalam_top_songs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/topTamilRecyclerView" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/malayalamRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMalayalamSongs" />
+
+
+        <TextView
+            android:id="@+id/tvNewReleases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/new_releases"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/malayalamRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newReleasesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_380"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNewReleases" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
